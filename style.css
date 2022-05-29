@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+
+}
+.slider{
+    max-width: 100%;
+    background-image: url(images/pattern-bg.svg);
+    box-sizing: border-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.image img{
+    margin-top: 50px;
+    width: 350px;
+    height: 350px;
+    box-shadow: rgba(27, 1, 82, 0.809) 0px 5px 15px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: translateY(-30px);
+    cursor: pointer;
+    user-select: none;
+
+}
+nav .left{
+    font-weight: 500;
+    color: hsl(240, 20%, 61%);
+    font-size: 20px;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px 15px;
+    border-radius: 25px 0px 0px 25px;
+}
+nav .right{
+    font-weight: 500;
+    color: hsl(240, 20%, 61%);
+    font-size: 20px;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px 15px;
+    border-radius: 0px 25px 25px 0px;
+
+}
+nav .left:hover,nav .right:hover{
+    background-color: hsl(240, 39%, 94%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* BIO CSS*/
+
+.bio{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+}
+.bio p{
+    max-width: 28ch;
+    color:rgba(27, 1, 82, 0.809);
+}
+.bio h1{
+    color:rgba(27, 1, 82, 0.809) ;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.bio .degree{
+    margin-top: 0px;
+    color: hsl(240, 20%, 61%);
+}
+
+@keyframes slide-right {
+    0%{
+        opacity: 0%;
+        transform: translateX(60px);
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes slide-left {
+    0%{
+        opacity: 0%;
+        transform: translateX(-60px);
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.animate-right{
+    animation: slide-right 2s 1;
+}
+.animate-left{
+    animation: slide-left 2s 1;
+}
