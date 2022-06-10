@@ -11,13 +11,13 @@ let awaitAnimation = false
 buttonright.addEventListener('click', slideright)
 
 let array = [{
-    image: '/images/image-tanya.jpg',
+    image: './images/image-tanya.jpg',
     bio: ' I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future.',
     name: 'Tanya Sinclair',
     degree: 'UX Engineer'
 },
 {
-    image: '/images/image-john.jpg',
+    image: './images/image-john.jpg',
     bio: '“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”',
     name: 'John Tarkpor',
     degree: 'Junior Front-end Developer'
